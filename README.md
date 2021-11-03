@@ -61,7 +61,7 @@ Caso dê tudo certo, a resposta será assim:
 }
 ```
 
-<h3 align='center'> Lista de  amigos </h3>
+<h3 align='center'> Lista de  produtos </h3>
 
 `GET /products - FORMATO DA RESPOSTA - STATUS 200`
 
