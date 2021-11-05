@@ -22,7 +22,7 @@ A url base da API é https://server-anderson-hamburguer.herokuapp.com/
 
 Caso dê tudo certo, a resposta será assim:
 
-`POST /login - FORMATO DA RESPOSTA - STATUS 201`
+`POST /users - FORMATO DA RESPOSTA - STATUS 201`
 
 ```json
 {
@@ -48,7 +48,7 @@ Caso dê tudo certo, a resposta será assim:
 
 Caso dê tudo certo, a resposta será assim:
 
-`POST /login - FORMATO DA RESPOSTA - STATUS 201`
+`POST /login - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
 {
@@ -114,6 +114,8 @@ Após o usuário estar logado, ele deve conseguir acessar os endpoints abaixo:
 
 Caso dê tudo certo, a resposta será assim:
 
+`POST /cart - FORMATO DA RESPOSTA - STATUS 201`
+
 ```json
 [
   {
@@ -133,7 +135,10 @@ Caso dê tudo certo, a resposta será assim:
 
 `GET /cart?userId=2 - FORMATO DA REQUISIÇÃO`
 
+
 Caso dê tudo certo, e tiver itens no carrinho a resposta será assim:
+
+`GET /cart?userId=2 - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
 [
@@ -150,13 +155,16 @@ Caso dê tudo certo, e tiver itens no carrinho a resposta será assim:
 ]
 ```
 
-`DELETE /cart/id - FORMATO DA RESPOSTA - STATUS 201`
+`DELETE /cart/id - FORMATO DA REQUISIÇÃO `
 
 Caso dê tudo certo o item que possuir o id será removido a lista:
 
+`DELETE /cart/id - FORMATO DA RESPOSTA - STATUS 200`
+
+
 <h3 align='center'> Atualizar quantidade de itens </h3>
 
-`PATCH /cart/id - FORMATO DA RESPOSTA - STATUS 200`
+`PATCH /cart/id - FORMATO DA REQUISIÇÃO`
 
 ```JSON
 
@@ -169,6 +177,9 @@ Caso dê tudo certo o item que possuir o id será removido a lista:
 ```
 
 Caso dê tudo certo a resposta será assim:
+
+`PATCH /cart/id - FORMATO DA RESPOSTA - STATUS 200`
+
 
 ```JSON
 
